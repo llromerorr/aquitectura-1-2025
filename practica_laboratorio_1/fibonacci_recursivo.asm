@@ -39,10 +39,10 @@
 		beq $t0, 2, caso_2
 		regreso_caso_2:
 		
-		# llamada recursiva 		# si $t0 >=3
-		move $a0, $t0 				# argumento 1 (n)
-		li $a1, 0 					# argumento 2 (0) 
-		li $a2, 1 					# argumento 3 (1)
+		# llamada recursiva			# si $t0 >=3
+		move $a0, $t0				# argumento 1 (n)
+		li $a1, 0					# argumento 2 (0) 
+		li $a2, 1					# argumento 3 (1)
 		bge $t0, 3, llamadafibRecursivo
 
 		# --------------------------------------------
